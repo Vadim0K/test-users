@@ -1,0 +1,59 @@
+@keyframes modalIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.html {
+  overflow: hidden !important;
+}
+
+.container {
+  max-width: 500px;
+  border-radius: 12px;
+  background-color: #fff;
+  margin: 30% auto;
+  padding: 20px;
+}
+
+.overlay {
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1003;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: block;
+}
+
+.header {
+  position: relative;
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.albumsList {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  color: var(--color-secondary);
+}
